@@ -1,0 +1,43 @@
+/* pc */
+@media (min-width:1200px) {
+    ::-webkit-scrollbar {
+        width: 10px
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #fafafa
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--skin-color);
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: rgb(99, 99, 99)
+    }
+}
+
+/* tablet & pc low screen */
+@media (min-width:992px) and (max-width:1199px) {}
+
+/* tablet */
+@media (max-width:991px) {}
+
+/* mobile large & moblie landscape*/
+@media (max-width:767px) {
+    body {
+        font-size: 15px;
+    }
+}
+
+/* mobile */
+@media (max-width: 574px) {
+    body {
+        font-size: 14px;
+    }
+}
