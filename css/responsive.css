@@ -9,7 +9,7 @@
     }
 
     ::-webkit-scrollbar-thumb {
-        background: var(--skin-color);
+        background: var(--danger);
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -22,22 +22,103 @@
     }
 }
 
-/* tablet & pc low screen */
-@media (min-width:992px) and (max-width:1199px) {}
+@media (max-width: 1024px) {
+    .profile {
+        flex-direction: column;
+        align-items: flex-start;
+        clip-path: none;
+    }
 
-/* tablet */
-@media (max-width:991px) {}
+    .profile .left {
+        margin-bottom: 2rem;
+    }
 
-/* mobile large & moblie landscape*/
-@media (max-width:767px) {
-    body {
-        font-size: 15px;
+    .profile .right {
+        align-items: flex-end;
+    }
+
+    .work .wrapper {
+        display: block;
+    }
+
+    .work .wrapper .slider__wrapper {
+        margin-bottom: 8rem;
     }
 }
 
-/* mobile */
-@media (max-width: 574px) {
-    body {
-        font-size: 14px;
+@media (max-width:992px) {
+    .skills .content {
+        display: block;
+    }
+
+    .skills .content .left {
+        margin-bottom: 6rem;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .about .content {
+        display: block;
+    }
+
+    .about .content .left {
+        margin-bottom: 6rem;
+    }
+
+    .contact .wrapper {
+        display: block;
+    }
+
+    .contact .wrapper .left {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .counter__section {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .counter__section>div {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width:576px) {
+    .profile {
+        align-items: center;
+    }
+
+    .profile .right {
+        align-self: center;
+    }
+
+    .profile .left {
+        margin-bottom: 6rem;
+    }
+
+    .work .wrapper .por .tabs ul {
+        flex-wrap: wrap;
+    }
+
+    .work .wrapper .portfolio .tabs ul li {
+        margin-bottom: 4rem;
+    }
+
+    .work .wrapper .portfolio .portfolio__wrapper {
+        margin-top: 0;
+    }
+
+    .contact .wrapper .left>div {
+        flex: 0 0 100%;
+    }
+
+    .contact .wrapper .right .form__group {
+        grid-template-columns: 1fr;
     }
 }
