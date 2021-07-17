@@ -14,17 +14,15 @@
     <link rel="shortcut icon" href="img/favicon/favicon.png" />
 
     <!-- Reset CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
     <!-- Font-awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/fe78fbcdb4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <script src="https://kit.fontawesome.com/fe78fbcdb4.js"></script>
 
-    <!-- Lin CSS -->
+    <!-- Lib CSS -->
     <link rel="stylesheet" href="./lib/headline/headline.css">
+    <link rel="stylesheet" href="./lib/magnific/magnificPopup.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -229,6 +227,104 @@
         </section>
         <!-- Skiils end -->
 
+        <!-- Counter start -->
+        <section class="counter__section">
+            <div>
+                <div>
+                    <i class="fas fa-project-diagram"></i>
+                </div>
+                <div>
+                    <h3>
+                        <span class="counter" data-count="13">13</span>
+                    </h3>
+                    <h5>Completed projects</h5>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-smile"></i>
+                </div>
+                <div>
+                    <h3>
+                        <span class="counter" data-count="365">365</span>
+                    </h3>
+                    <h5>Happy clients</h5>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <i class="fas fa-trophy"></i>
+                </div>
+                <div>
+                    <h3>
+                        <span class="counter" data-count="23">23</span>
+                    </h3>
+                    <h5>Awards received</h5>
+                </div>
+            </div>
+        </section>
+        <!-- Counter end -->
+
+        <!-- Work start -->
+        <section class="work">
+            <h1 class="section__heading">My Work & Review</h1>
+            <div class="wrapper">
+                <div class="slider">
+
+                </div>
+                <div class="portfolio">
+                    <div class="tabs">
+                        <ul>
+                            <li>
+                                <a href="#" data-filter="*" class="active">All</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".web">Web</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".entertainment">Entertainment</a>
+                            </li>
+                            <li>
+                                <a href="#" data-filter=".other">Other</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="portfolio__wrapper">
+                        <div class="item web">
+                            <a href="./img/1.jpg" class="magnify" title="something">
+                                <img src="./img/1.jpg" alt="project1">
+                            </a>
+                        </div>
+                        <div class="item entertainment">
+                            <a href="./img/2.jpg" class="magnify" title="something">
+                                <img src="./img/2.jpg" alt="project2">
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="./img/3.jpg" class="magnify" title="something">
+                                <img src="./img/3.jpg" alt="project3">
+                            </a>
+                        </div>
+                        <div class="item entertainment">
+                            <a href="./img/4.jpg" class="magnify" title="something">
+                                <img src="./img/4.jpg" alt="project4">
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="./img/5.jpg" class="magnify" title="something">
+                                <img src="./img/5.jpg" alt="project5">
+                            </a>
+                        </div>
+                        <div class="item other">
+                            <a href="./img/6.jpg" class="magnify" title="something">
+                                <img src="./img/6.jpg" alt="project6">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Work end -->
     </main>
     <!-- Main end -->
 
@@ -236,6 +332,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./lib/headline/headline.js"></script>
     <script src="./lib/ripples.js"></script>
+    <script src="./lib/isotope.js"></script>
+    <script src="./lib/magnific/magnificPopup.js"></script>
 
     <!-- Main JS -->
     <script src="./js/main.js"></script>
