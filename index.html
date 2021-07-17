@@ -24,7 +24,11 @@
     <link rel="stylesheet" href="./lib/headline/headline.css">
     <link rel="stylesheet" href="./lib/magnific/magnificPopup.css">
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./lib/cursor/cursor.css">
+    <link rel="stylesheet" href="./lib/particles/particles.css">
 
+    <!-- Preload page -->
+    <link rel="stylesheet" href="./lib/loader-page/loader.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./css/style.css">
@@ -40,10 +44,12 @@
     <nav>
         <div class="container inner">
             <div class="logo">
+                <a href="https://namnguyenthanhwork.github.io/bio">
                 <img src="./lib/loader-page/logo-dark.svg" alt="">
+                </a>
             </div>
             <div>
-                <button>
+                <button id="print">
                     <i class="fas fa-print"></i> Print
                 </button>
             </div>
@@ -58,13 +64,15 @@
             <!-- Profile left start -->
             <div class="left">
                 <div class="avatar_block">
-                    <img src="./img/user.jpg" alt="user">
+                    <img src="./img/profile-1.jpg" alt="logo">
                     <span>
-                        <i class="fas fa-comment-dots"></i>
+                        <a href="https://www.messenger.com/t/100010636239565/" target="_blank">
+                            <i class="fas fa-comment-dots"></i>
+                        </a>
                     </span>
                 </div>
                 <div>
-                    <h2>Thành Nam</h2>
+                    <h2>Nguyễn Thành Nam</h2>
                     <p class="cd-headline loading-bar">
                         <span class="cd-words-wrapper">
                             <b class="is-visible">Web Developer</b>
@@ -92,18 +100,27 @@
                 <!-- Socials -->
                 <ul class="socials">
                     <li>
-                        <a href="#">
+                        <a href="https://www.facebook.com/NguyenThanhNam1601" target="_blank" title="facebook">
                             <i class="fab fa-facebook"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-twitter"></i>
+                        <a href="https://github.com/namnguyenthanhwork" target="_blank" title="github">
+                            <i class="fab fa-github-alt"></i> </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/yuu2k01/" target="_blank" title="instagram">
+                            <i class="fab fa-instagram"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
-                            <i class="fab fa-dribbble"></i>
+                        <a href="mailto:namnguyenthanh.work@gmail.com" target="_blank" title="gmail">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://biolink.com.vn/thanhnamnguyen" target="_blank" title="bio">
+                            <i class="fas fa-link"></i>
                         </a>
                     </li>
                 </ul>
@@ -114,15 +131,15 @@
 
         <!-- About start -->
         <section class="about">
-            <h1 class="section__heading">ABOUT US</h1>
+            <h1 class="section__heading">About me</h1>
             <div class="content">
                 <!-- Content left start -->
                 <div class="left">
-                    <h2>I'm Thành Nam</h2>
+                    <h2>I'm <span class="typing"></span></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum libero nemo eum numquam at
                         veniam itaque quia, aliquam id accusamus officia neque veritatis saepe minus expedita quidem.
                         Ipsa, est ea?</p>
-                    <button>Download CV</button>
+                    <button id="download">Download CV</button>
                 </div>
                 <!-- Content left end -->
 
@@ -130,11 +147,11 @@
                 <div class="right">
                     <p>
                         <span>Name</span>
-                        <span>Thành Nam</span>
+                        <span>Nguyễn Thành Nam</span>
                     </p>
                     <p>
                         <span>Date of birth</span>
-                        <span>Jan 16 2001</span>
+                        <span>January 16, 2001</span>
                     </p>
                     <p>
                         <span>Nationality</span>
@@ -296,19 +313,19 @@
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio
                                     consequatur minus eligendi ducimus quaerat</p>
                                 <div>
-                                    <img src="./img/1.jpg" alt="">
+                                    <img src="./img/user-rv.png" alt="">
                                 </div>
                                 <h2>Thành Nam</h2>
                                 <h6>Developer</h6>
                             </div>
                             <div class="slide">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus distinctio
+                                <p>tur adipisicing elit. Delectus distinctio
                                     consequatur minus eligendi ducimus quaerat</p>
                                 <div>
-                                    <img src="./img/1.jpg" alt="">
+                                    <img src="./img/user-rv.png" alt="">
                                 </div>
-                                <h2>Thành Nam</h2>
-                                <h6>Developer</h6>
+                                <h2>Kim Thi</h2>
+                                <h6>Designer</h6>
                             </div>
                         </div>
                     </div>
@@ -335,33 +352,33 @@
                     </div>
                     <div class="portfolio__wrapper">
                         <div class="item web">
-                            <a href="./img/1.jpg" class="magnify" title="something">
-                                <img src="./img/1.jpg" alt="project1">
+                            <a href="./img/project-1.png" class="magnify" title="Restaurant">
+                                <img src="./img/project-1-1.png" alt="project1">
                             </a>
                         </div>
                         <div class="item entertainment">
-                            <a href="./img/2.jpg" class="magnify" title="something">
-                                <img src="./img/2.jpg" alt="project2">
+                            <a href="./img/project-2.png" class="magnify" title="Block Ninja">
+                                <img src="./img/project-2-1.png" alt="project2">
                             </a>
                         </div>
                         <div class="item web">
-                            <a href="./img/3.jpg" class="magnify" title="something">
-                                <img src="./img/3.jpg" alt="project3">
+                            <a href="./img/project-3.png" class="magnify" title="Headphone Shop">
+                                <img src="./img/project-3-1.png" alt="project3">
                             </a>
                         </div>
                         <div class="item entertainment">
-                            <a href="./img/4.jpg" class="magnify" title="something">
-                                <img src="./img/4.jpg" alt="project4">
+                            <a href="./img/project-6.png" class="magnify" title="Music Player">
+                                <img src="./img/project-6-1.png" alt="project4">
                             </a>
                         </div>
                         <div class="item web">
-                            <a href="./img/5.jpg" class="magnify" title="something">
-                                <img src="./img/5.jpg" alt="project5">
+                            <a href="./img/project-4.jpg" class="magnify" title="Travel">
+                                <img src="./img/project-4-1.jpg" alt="project5">
                             </a>
                         </div>
                         <div class="item other">
-                            <a href="./img/6.jpg" class="magnify" title="something">
-                                <img src="./img/6.jpg" alt="project6">
+                            <a href="./img/project-5.png" class="magnify" title="Robocode">
+                                <img src="./img/project-5-1.png" alt="project6">
                             </a>
                         </div>
                     </div>
@@ -433,11 +450,11 @@
                         <div class="form__group">
                             <div>
                                 <label for="">Name</label>
-                                <input type="text" placeholder="ex: Nguyễn Thành Nam">
+                                <input type="text" placeholder="ex: Nguyễn Thành Nam" required>
                             </div>
                             <div>
                                 <label for="">Email</label>
-                                <input type="email" placeholder="ex: namnguyenthanh.work@gmail.com">
+                                <input type="email" placeholder="ex: namnguyenthanh.work@gmail.com" required>
                             </div>
                         </div>
                         <div class="form__group textarea__wrapper">
@@ -459,17 +476,35 @@
     <!-- Footer start -->
     <footer class="container">
         <p>&copy; Copyright 2021 All right reserved</p>
-        <p>Design template with <i class="fas fa-heart"></i> by <a href="#">Thành Nam</a></p>
+        <p>Design template with <i class="fas fa-heart"></i> by <a href="https://www.facebook.com/NguyenThanhNam1601"
+                target="_blank">Thành Nam</a></p>
     </footer>
     <!-- Footer end -->
 
+    <!-- Preloader start -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div id="loader_logo"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- particles start -->
+    <div id="particles-js"></div>
+    <!-- particles end -->
+
     <!-- All plugins -->
+    <script src="./lib/particles/particles.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./lib/headline/headline.js"></script>
     <script src="./lib/ripples.js"></script>
     <script src="./lib/isotope.js"></script>
     <script src="./lib/magnific/magnificPopup.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <script src="./lib/cursor/cursor.js"></script>
 
     <!-- Main JS -->
     <script src="./js/main.js"></script>

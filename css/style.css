@@ -13,8 +13,7 @@
     --fade: #7081b9;
     --footer: #212a4a;
     --black: #060b1b;
-    --twitter: #4ac7ec;
-    --dribbble: #ff5da0;
+    --dribbble: #cd0a5b;
     --success: #1ecab8;
     --danger: #f1646c;
     --dark-blue: #28365f;
@@ -68,7 +67,12 @@ section {
 }
 
 main {
-    background: var(--primary);
+    background: #1a253fcf;
+}
+
+/* Custom */
+.swal-text {
+    text-align: center;
 }
 
 /* ---------------
@@ -90,35 +94,50 @@ nav .inner .logo img {
 }
 
 nav .inner button {
-    background: var(--secondary);
     color: var(--pure);
-    border: none;
+    background: var(--secondary);
     padding: 1rem 1.5rem;
+
     font-size: 14px;
+    cursor: pointer;
+
+    border: none;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+nav .inner button:hover {
+    background: var(--dark-blue);
 }
 
 /* ---------------
     Profile style 
 ------------------*/
 .profile {
-    background: var(--black);
     display: flex;
     align-items: center;
-    padding: 3rem;
-    margin-top: 60px;
+
+    background: var(--black);
     clip-path: polygon(0 0, 100% 0, 100% 80%, 25% 100%, 0 80%);
+
+    padding: 3rem;
     padding-bottom: 5rem;
+    margin-top: 60px;
 }
 
 .profile .left {
-    flex: 2;
     display: flex;
     align-items: center;
+    flex: 2;
 }
 
 .profile .right {
@@ -127,9 +146,10 @@ nav .inner button {
 
 .profile .left h2 {
     color: var(--fade);
+    margin-bottom: 1rem;
+
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 1rem;
 }
 
 .profile .left p {
@@ -162,19 +182,24 @@ nav .inner button {
     margin-right: 2rem;
 }
 
-.profile .left .avatar_block span {
+.profile .left .avatar_block span a {
     position: absolute;
     right: 4px;
     bottom: 4px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: var(--pure);
     background: var(--info);
+
     width: 32px;
     height: 32px;
+
     cursor: pointer;
     box-shadow: 0 0 20px 0 rgba(32, 41, 51, 0.05);
+
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -188,13 +213,13 @@ nav .inner button {
 
 .profile .right ul.contact li {
     color: var(--termary);
-    margin-bottom: .7rem;
     font-size: 14px;
+    margin-bottom: .7rem;
 }
 
 .profile .right ul.contact li i {
-    font-size: 18px;
-    margin-right: .3rem;
+    font-size: 15px;
+    margin-right: .5rem;
 }
 
 .profile .right ul.socials {
@@ -208,11 +233,14 @@ nav .inner button {
 
 .profile .right ul.socials li a {
     display: inline-block;
+
     width: 36px;
     height: 36px;
     line-height: 36px;
+
     text-align: center;
     color: var(--pure);
+
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -225,11 +253,19 @@ nav .inner button {
 }
 
 .profile .right ul.socials li:nth-child(2) a {
-    background: var(--twitter);
+    background: #2e3f44;
 }
 
 .profile .right ul.socials li:nth-child(3) a {
     background: var(--dribbble);
+}
+
+.profile .right ul.socials li:nth-child(4) a {
+    background: #297db9;
+}
+
+.profile .right ul.socials li:nth-child(5) a {
+    background: #2aa03e;
 }
 
 /* -----------------
@@ -237,12 +273,14 @@ nav .inner button {
 ------------------- */
 .section__heading {
     position: relative;
+    display: inline-block;
+
     font-size: 16px;
     font-weight: 500;
+    text-shadow: 0 0 1px rgba(40, 54, 95, 0.1);
+
     color: var(--pure);
     margin-bottom: 3rem;
-    display: inline-block;
-    text-shadow: 0 0 1px rgba(40, 54, 95, 0.1);
 }
 
 .section__heading::after {
@@ -250,6 +288,7 @@ nav .inner button {
     position: absolute;
     top: 20px;
     left: 0;
+
     background: var(--danger);
     width: 100%;
     height: 2px;
@@ -262,52 +301,74 @@ nav .inner button {
 }
 
 .about .content h2 {
-    color: var(--info);
     font-size: 18px;
-    line-height: 22px;
     font-weight: 700;
+    line-height: 22px;
+
     margin-bottom: 1.6rem;
+    color: var(--info);
 }
 
 .about .content p {
-    color: var(--termary);
     font-size: 14px;
     line-height: 1.6;
     letter-spacing: 0.1px;
+
+    color: var(--termary);
     margin-bottom: 1rem;
 }
 
 .about .content .left button {
     background: rgba(77, 121, 246, 0.1);
     color: var(--info);
-    padding: 4px 8px;
+
     font-size: 12px;
-    border: none;
     line-height: 24px;
     outline: none;
+
+    padding: 4px 8px;
     cursor: pointer;
+
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.about .content .left button:hover {
+    color: var(--pure);
+    background: var(--info);
 }
 
 .about .content .right p {
     line-height: 1.6;
     font-size: 14px;
-    color: var(--termary);
     letter-spacing: 0.1px;
+
+    color: var(--termary);
     margin-bottom: 1rem;
 }
 
 .about .content .right p span:nth-child(1) {
-    width: 130px;
-    float: left;
-    font-weight: 500;
-    padding-left: 10px;
-    display: block;
     position: relative;
+    display: block;
+    float: left;
+
+    width: 95px;
+    font-weight: 500;
 }
 
 .about .content .right p span:nth-child(2) {
-    padding-left: 150px;
     display: block;
+    padding-left: 110px;
 }
 
 .about .content .right p span:nth-child(1)::after {
@@ -337,19 +398,19 @@ nav .inner button {
 
 .skills .content .left .heading i {
     color: var(--fade);
-    font-size: 35px;
+    font-size: 30px;
 }
 
 .skills .content .left .heading h5 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0.5rem;
     color: var(--mild);
 }
 
 .skills .content .left p {
     font-size: 14px;
-    color: var(--termary);
     line-height: 1.7;
+    color: var(--termary);
 }
 
 .skills .content .left p.center {
@@ -357,9 +418,9 @@ nav .inner button {
 }
 
 .skills .content .left .item {
+    position: relative;
     margin-bottom: 2.6rem;
     margin-left: 15px;
-    position: relative;
 }
 
 .skills .content .left .timeline__wrapper {
@@ -371,10 +432,12 @@ nav .inner button {
     position: absolute;
     top: 5px;
     left: 0;
+
     width: 10px;
     height: 10px;
-    border: 2px solid var(--info);
     margin-left: -21px;
+
+    border: 2px solid var(--info);
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -383,10 +446,11 @@ nav .inner button {
 }
 
 .skills .skills_wrapper .skills-box h4 {
-    color: var(--termary);
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: 500;
+    text-transform: uppercase;
+
+    color: var(--termary);
     margin-bottom: 1rem;
 }
 
@@ -396,10 +460,12 @@ nav .inner button {
 
 .skills .skills_wrapper .skills-box .progress_wrapper {
     background: #20294a;
-    height: 6px;
     width: 100%;
+    height: 6px;
+
     box-shadow: 0 0 1px 0.25px #4d79f6;
     border: 2px solid var(--primary);
+
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -408,11 +474,14 @@ nav .inner button {
 }
 
 .skills .skills_wrapper .skills-box .progress_wrapper .progress__bar {
+    position: relative;
     display: block;
+
     height: 100%;
     width: 0%;
+
     background: var(--info);
-    position: relative;
+
     transition: all 1s ease-in-out;
     -webkit-transition: all 1s ease-in-out;
     -moz-transition: all 1s ease-in-out;
@@ -424,8 +493,10 @@ nav .inner button {
     position: absolute;
     right: -15px;
     top: -25px;
+
     margin-bottom: 10px;
     color: var(--termary);
+
     font-size: 13px;
     text-transform: uppercase;
 }
@@ -446,8 +517,9 @@ nav .inner button {
 }
 
 .counter__section>div i {
-    font-size: 32px;
-    margin-right: 10px;
+    font-size: 30px;
+    width: 35px;
+    margin-right: 15px;
 }
 
 .counter__section>div:nth-child(1) i {
@@ -471,8 +543,8 @@ nav .inner button {
 
 .counter__section>div h5 {
     font-size: 16px;
-    color: var(--fade);
     font-weight: 400;
+    color: var(--fade);
 }
 
 /* ------------
@@ -494,13 +566,25 @@ nav .inner button {
     color: var(--fade);
     border-bottom: 1px solid transparent;
     padding: 10px 15px;
+
     font-size: 14px;
     letter-spacing: 2px;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.work .wrapper .portfolio .tabs ul li a:hover {
+    border-color: var(--info);
 }
 
 .work .wrapper .portfolio .tabs ul li a.active {
     border-color: var(--info);
     color: var(--info);
+
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -522,8 +606,10 @@ nav .inner button {
 
 .work .wrapper .portfolio .portfolio__wrapper a img {
     display: block;
+
     width: 100%;
     height: 100%;
+
     object-fit: cover;
     padding: 5px;
 }
@@ -534,19 +620,25 @@ nav .inner button {
     text-align: center;
 }
 
+.work .wrapper .slider__wrapper .icon__wrap i {
+    font-size: 30px;
+}
+
 .work .wrapper .slider__wrapper .slider .slide p {
-    color: var(--termary);
-    line-height: 1.6;
-    text-align: center;
+    width: 85%;
     margin-bottom: 1rem;
     padding-top: 2rem;
-    width: 85%;
+
+    line-height: 1.6;
+    text-align: center;
+    color: var(--termary);
 }
 
 .work .wrapper .slider__wrapper .slider .slide img {
-    width: 60px;
-    height: 60px;
+    width: 90px;
+    height: 90px;
     object-fit: cover;
+
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -582,8 +674,9 @@ nav .inner button {
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 60px;
-    margin-top: 40px;
     align-items: center;
+
+    margin-top: 40px;
 }
 
 .contact .wrapper .left>div {
@@ -599,6 +692,7 @@ nav .inner button {
 .contact .wrapper .left i {
     font-size: 20px;
     color: var(--info);
+    width: 20px;
 }
 
 .contact .wrapper .left h4 {
@@ -621,6 +715,7 @@ nav .inner button {
     grid-template-columns: 1fr 1fr;
     grid-gap: 30px;
     align-items: center;
+
     margin-bottom: 15px;
 }
 
@@ -636,16 +731,29 @@ nav .inner button {
 
 .contact .wrapper .right .form__group>div input,
 .contact .wrapper .right .form__group.textarea__wrapper textarea {
-    padding: 15px;
-    background: transparent;
     color: var(--termary);
+    background: transparent;
+    padding: 15px;
+
     font-size: 14px;
     border: 1px solid var(--dark-blue);
+
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.contact .wrapper .right .form__group>div input:hover,
+.contact .wrapper .right .form__group.textarea__wrapper textarea:hover {
+    border: 1px solid var(--secondary);
 }
 
 .contact .wrapper .right .form__group>div input:focus,
@@ -660,17 +768,25 @@ nav .inner button {
 }
 
 .contact .wrapper .right button {
-    background: var(--info);
+    display: block;
+    width: 80px;
+    padding: 1rem 0;
     border: none;
-    padding: 1rem 2rem;
-    font-size: 14px;
-    cursor: pointer;
+    margin: auto;
+
     color: var(--pure);
+    background: var(--info);
+
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -686,11 +802,12 @@ nav .inner button {
     Footer style
 ---------------- */
 footer {
-    background: var(--footer);
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 14px;
     color: var(--termary);
+    background: var(--footer);
+    padding: 2rem 0;
+
+    text-align: center;
+    font-size: 14px;
 }
 
 footer p {

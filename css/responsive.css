@@ -47,24 +47,16 @@
 }
 
 @media (max-width:992px) {
+    body {
+        padding: unset;
+    }
+
     .skills .content {
         display: block;
     }
 
     .skills .content .left {
-        margin-bottom: 6rem;
-    }
-
-
-}
-
-@media (max-width: 768px) {
-    .about .content {
-        display: block;
-    }
-
-    .about .content .left {
-        margin-bottom: 6rem;
+        margin-bottom: 2rem;
     }
 
     .contact .wrapper {
@@ -74,8 +66,26 @@
     .contact .wrapper .left {
         display: flex;
         align-items: center;
-        flex-wrap: wrap;
         justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .contact .wrapper .left>div {
+        flex: 0 0 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    nav .inner {
+        padding: 0 1.5rem;
+    }
+
+    .about .content {
+        display: block;
+    }
+
+    .about .content .left {
+        margin-bottom: 6rem;
     }
 
     .counter__section {
@@ -85,7 +95,13 @@
     }
 
     .counter__section>div {
-        margin-bottom: 2rem;
+        flex: 0 0 100%;
+        justify-content: unset;
+        padding: 0 0 2rem 5rem;
+    }
+
+    .contact .wrapper .left>div {
+        flex: 0 0 100%;
     }
 }
 
@@ -99,7 +115,11 @@
     }
 
     .profile .left {
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
+    }
+
+    .skills .content .left {
+        grid-template-columns: 1.5fr 1fr;
     }
 
     .work .wrapper .por .tabs ul {
@@ -112,10 +132,6 @@
 
     .work .wrapper .portfolio .portfolio__wrapper {
         margin-top: 0;
-    }
-
-    .contact .wrapper .left>div {
-        flex: 0 0 100%;
     }
 
     .contact .wrapper .right .form__group {
